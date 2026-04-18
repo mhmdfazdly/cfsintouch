@@ -1,24 +1,38 @@
+:root {
+    --bg-color: #333;
+    --text-color: white;
+    --button-bg: blue;
+    --button-hover: darkblue;
+}
+
+.dark-mode {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --button-bg: #555;
+    --button-hover: #333;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #333;
+    background-color: var(--bg-color);
 }
 
 h1 {
-    color: white;
+    color: var(--text-color);
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: blue;
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--text-color);
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: var(--button-hover);
 }
 
 .drop {

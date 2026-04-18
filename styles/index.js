@@ -2,6 +2,10 @@ function changeText() {
     document.getElementById("text").innerHTML = "Text has been changed!";
 }
 
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
 window.onload = function() {
     const rainContainer = document.createElement('div');
     rainContainer.id = 'rain';
