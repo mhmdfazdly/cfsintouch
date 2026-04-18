@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #333;
 }
 
 h1 {
-    color: #333;
+    color: white;
 }
 
 button {
@@ -19,4 +19,21 @@ button {
 
 button:hover {
     background-color: darkblue;
+}
+
+.drop {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, #87ceeb);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        top: -20px;
+    }
+    to {
+        top: 100vh;
+    }
 }
